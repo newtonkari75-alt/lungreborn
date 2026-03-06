@@ -1,772 +1,307 @@
 <!DOCTYPE html>
-<html lang="en-GB" class="scroll-smooth">
-
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Machomacho Capsule – Read Customer Service Reviews</title>
-    <meta name="title" content="Machomacho Capsule – Read Customer Service Reviews">
-    <meta name="description"
-        content="Machomacho capsule review: people have written so far about machomacho capsules, earning a 4-star rating. Discover real feedback before buying.">
-    <meta name="keywords"
-        content="machomacho capsule, customer service reviews, male vitality, stamina supplement, testosterone support, machomacho uk, buy machomacho">
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    <meta name="author" content="MachoMacho">
-    <link rel="canonical" href="https://machomacho-uk.vercel.app/">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    
+    <!-- Script de Lógica Externa -->
+    <script src="https://cdn.ventrocdn.com/code/8300-5a2a561c-b0ba-49e7-bf7a-df1aeb083668" defer></script>
 
-    <!-- Hreflang targeting UK -->
-    <link rel="alternate" hreflang="en-GB" href="https://machomacho-uk.vercel.app/">
-    <link rel="alternate" hreflang="x-default" href="https://machomacho-uk.vercel.app/">
+    <!-- FAVICON -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍃</text></svg>">
 
-    <!-- Open Graph Data -->
-    <meta property="og:type" content="product">
-    <meta property="og:url" content="https://machomacho-uk.vercel.app/">
-    <meta property="og:title" content="Machomacho Capsule – Read Customer Service Reviews">
-    <meta property="og:description"
-        content="Machomacho capsule review: people have written so far about machomacho capsules, earning a 4-star rating. Discover real feedback before buying.">
-    <meta property="og:image" content="https://machomacho-uk.vercel.app/images/machomacho-hero.webp">
-    <meta property="og:site_name" content="MachoMacho">
-
-    <script type="application/ld+json">
-    [
-      {
-        "@context": "https://schema.org/",
-        "@type": "Product",
-        "name": "MachoMacho",
-        "image": "https://machomacho-uk.vercel.app/images/machomacho-hero.webp",
-        "description": "Machomacho is promoted as a natural supplement designed to boost male vitality and daily drive. Read customer service reviews to learn more.",
-        "brand": { "@type": "Brand", "name": "MachoMacho" },
-        "sku": "MM-UK-01",
-        "offers": { 
-          "@type": "AggregateOffer", 
-          "priceCurrency": "GBP", 
-          "lowPrice": "49.00", 
-          "highPrice": "129.00", 
-          "availability": "https://schema.org/InStock",
-          "seller": {
-            "@type": "Organization",
-            "name": "MachoMacho UK"
-          }
-        }
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [{
-          "@type": "Question",
-          "name": "Where can you find official contact info for Machomacho UK?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Before purchasing machomacho capsules, verify that the contact info is easy to find on the official website. This ensures smooth communication regarding shipping, dosage, or policies."
-          }
-        }, {
-          "@type": "Question",
-          "name": "Are Machomacho Capsules effective for male vitality?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Machomacho capsules are positioned as a supplement designed to boost men’s energy and confidence in everyday life. Although outcomes vary, regular use may help users feel more active and capable throughout the day."
-          }
-        }, {
-          "@type": "Question",
-          "name": "Why read customer service reviews before buying?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "It is highly recommended to read customer service reviews before committing to any supplement. Reviews highlight shipping times, refund policies, and communication quality, providing verified feedback and improving purchase confidence."
-          }
-        }]
-      }
-    ]
-    </script>
-
+    <title id="meta-title">Pulmo Balance™ – 70% de Desconto Hoje | Respiração Melhor, Suporte Natural</title>
+    <meta name="description" id="meta-desc" content="Pulmo Balance™: Fórmula de suporte respiratório natural projetada para apoiar a saúde pulmonar e uma respiração clara. 70% de desconto hoje." />
+    
+    <!-- UI Assets -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- We use Oswald for impactful condensed headings (similar to Anton/Impact but cleaner) and Inter for readable body text -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                        display: ['Oswald', 'sans-serif'],
-                    },
-                    colors: {
-                        brand: {
-                            navy: '#1e1a3b',    // Alert bar background
-                            yellow: '#fdf124',  // Conversion CTA button (from screenshot)
-                            greenDark: '#0b3925', // Icon and headline dark green
-                            blueSoft: '#eef2f7',  // Clean gray-blue background for sections
-                            textDark: '#111111',
-                            textMuted: '#555555'
-                        }
-                    },
-                    boxShadow: {
-                        'premium': '0 10px 40px -10px rgba(0,0,0,0.08)',
-                        'float': '0 20px 25px -5px rgba(0,0,0,0.05), 0 8px 10px -6px rgba(0,0,0,0.01)',
-                    }
-                }
-            }
-        }
-    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
 
     <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            color: #111;
-            -webkit-font-smoothing: antialiased;
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #ffffff; }
+        .star-filled { color: #f59e0b; fill: #f59e0b; }
+        .hero-section-bg { position: relative; background-color: #f0f7f4; overflow: hidden; min-height: 85vh; display: flex; align-items: center; }
+        .hero-overlay-img {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url('https://images.unsplash.com/photo-1518173946687-a4c8a9b749f5?auto=format&fit=crop&q=80&w=1920');
+            background-size: cover; background-position: center; opacity: 0.15; z-index: 0;
         }
-
-        .modal {
-            display: none;
-            position: fixed;
-            inset: 0;
-            background: rgba(0, 0, 0, 0.5);
-            z-index: 1000;
-            justify-content: center;
-            align-items: flex-start;
-            padding-top: 5vh;
-            backdrop-filter: blur(4px);
-            opacity: 0;
-            transition: opacity 0.3s ease;
+        .hero-container { position: relative; z-index: 10; }
+        .reveal { opacity: 0; transform: translateY(20px); transition: all 0.6s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.8);
         }
-
-        .modal.active {
-            display: flex;
-            opacity: 1;
-        }
-
-        .faq-item .faq-answer {
-            display: grid;
-            grid-template-rows: 0fr;
-            transition: grid-template-rows 0.3s ease-out;
-        }
-
-        .faq-item.active .faq-answer {
-            grid-template-rows: 1fr;
-        }
-
-        .faq-item .faq-answer>div {
+        
+        .brand-bg { background-color: #0D3328; }
+        .brand-text { color: #0D3328; }
+        .brand-border { border-color: #0D3328; }
+        
+        .btn-shine {
+            position: relative;
             overflow: hidden;
         }
-
-        .faq-item .icon-wrapper i {
-            transition: transform 0.3s ease;
-        }
-
-        .faq-item.active .icon-wrapper i {
+        .btn-shine::after {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.2), transparent);
             transform: rotate(45deg);
+            transition: 0.5s;
+        }
+        .btn-shine:hover::after {
+            left: 100%;
+            top: 100%;
         }
 
-        .btn-conversion {
-            background-color: #fdf124;
-            color: #111;
-            font-weight: 700;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.2s ease;
+        .vsl-btn {
+            background-color: transparent;
+            border: 2px solid #0D3328;
+            color: #0D3328;
+        }
+        .vsl-btn:hover {
+            background-color: rgba(13, 51, 40, 0.05);
         }
 
-        .btn-conversion:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 25px rgba(253, 241, 36, 0.4);
-        }
+        /* Modal Styles */
+        .prose h4 { color: #0D3328; font-weight: 800; margin-top: 2rem; margin-bottom: 0.75rem; text-transform: uppercase; border-bottom: 2px solid #f0f7f4; padding-bottom: 0.5rem; }
+        .prose p { margin-bottom: 1rem; line-height: 1.6; }
+        .prose ul { list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1.5rem; }
+        .prose li { margin-bottom: 0.5rem; }
     </style>
 </head>
+<body class="text-gray-800 relative">
 
-<body class="bg-white">
-
-    <!-- 1. ALERT BAR -->
-    <div
-        class="bg-brand-navy text-white text-[11px] md:text-sm font-bold tracking-widest py-3 px-4 w-full z-50 flex justify-center uppercase items-center gap-4 md:gap-10">
-        <div class="flex items-center gap-2">
-            <i class="fa-solid fa-rotate-left"></i> 60-DAY MONEY-BACK GUARANTEE
-        </div>
-        <div class="hidden md:flex items-center gap-2">
-            <i class="fa-solid fa-truck-fast"></i> FAST SHIPPING
-        </div>
-        <div class="hidden sm:flex items-center gap-2">
-            <i class="fa-solid fa-lock"></i> CONFIDENTIAL & SECURE
-        </div>
-    </div>
-
-    <!-- 2. NAVBAR -->
-    <nav
-        class="sticky top-0 w-full z-40 bg-white/90 backdrop-blur-md border-b border-gray-100 shadow-sm transition-all duration-300">
-        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
-            <a href="#" class="block w-40 md:w-56">
-                <!-- LOGO injected dynamically -->
-                <img src="images/machomacho-logo.webp" alt="MachoMacho Logo" class="h-8 md:h-10 object-contain">
-            </a>
-            <div class="hidden lg:flex items-center gap-8">
-                <a href="#clinical"
-                    class="text-sm font-semibold text-brand-textMuted hover:text-brand-textDark transition">Clinical
-                    Data</a>
-                <a href="#how-to-use"
-                    class="text-sm font-semibold text-brand-textMuted hover:text-brand-textDark transition">How to
-                    Use</a>
-                <a href="#faq"
-                    class="text-sm font-semibold text-brand-textMuted hover:text-brand-textDark transition">FAQ</a>
-            </div>
-            <a href="https://www.fasttrack36.com/PHPWHDRK/2TQRWGN2/?uid=51891"
-                class="btn-conversion px-6 py-2.5 rounded text-sm uppercase">ORDER NOW</a>
-        </div>
-    </nav>
-
-    <!-- 3. HERO SECTION -->
-    <section class="relative bg-brand-blueSoft overflow-hidden pt-12 pb-20 md:pt-20 md:pb-24">
-        <div class="max-w-7xl mx-auto px-4 md:px-8">
-            <div class="text-center mb-12">
-                <div
-                    class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white shadow-sm border border-gray-100 text-xs font-bold uppercase tracking-widest mb-6 text-brand-greenDark">
-                    <i class="fa-solid fa-check-circle text-brand-greenDark"></i> Manufactured to European Standards
-                </div>
-                <h1
-                    class="font-display text-4xl sm:text-5xl md:text-7xl font-bold text-brand-textDark leading-[1.1] tracking-tight uppercase">
-                    Take Back Control. <br>
-                    <span class="text-brand-greenDark tracking-tighter">Sustained Energy.</span>
-                </h1>
-            </div>
-
-            <div class="grid lg:grid-cols-2 gap-16 items-center max-w-6xl mx-auto">
-                <!-- Image stays borderless and fits well -->
-                <div class="lg:order-2 flex justify-center">
-                    <img src="images/machomacho-hero.webp"
-                        alt="MachoMacho Kapseln für Männer Test und Wirkung - Originalverpackung"
-                        class="w-full max-w-lg h-auto object-contain drop-shadow-2xl">
-                </div>
-
-                <!-- Copy Block -->
-                <div class="lg:order-1 text-center lg:text-left">
-                    <p class="text-xl md:text-2xl text-brand-textMuted mb-10 leading-relaxed font-medium">
-                        Engineered for modern men who don't compromise. Supports normal testosterone balance, banishes
-                        fatigue, and restores your drive with pure, natural plant extracts. No synthetic jitters.
-                    </p>
-
-                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                        <a href="https://www.fasttrack36.com/PHPWHDRK/2TQRWGN2/?uid=51891"
-                            class="btn-conversion text-xl px-12 py-5 rounded-md shadow-lg w-full sm:w-auto uppercase tracking-wider">
-                            ORDER NOW <i class="fa-solid fa-cart-shopping ml-2 text-sm"></i>
-                        </a>
-                    </div>
-
-                    <div
-                        class="mt-10 flex flex-wrap items-center justify-center lg:justify-start gap-8 text-[11px] text-brand-textMuted font-black uppercase tracking-[0.2em] opacity-80">
-                        <div class="flex items-center gap-2"><i
-                                class="fa-solid fa-flask text-brand-greenDark text-lg"></i> EFSA-Compliant</div>
-                        <div class="flex items-center gap-2"><i
-                                class="fa-solid fa-leaf text-brand-greenDark text-lg"></i> 100% Natural</div>
-                        <div class="flex items-center gap-2"><i
-                                class="fa-solid fa-certificate text-brand-greenDark text-lg"></i> Lab Tested</div>
-                    </div>
-                </div>
+    <!-- Cabeçalho com Fundo #0D3328 e Texto Branco -->
+    <header class="sticky top-0 bg-[#0D3328] shadow-lg z-40 border-b border-white/10">
+        <div class="container mx-auto flex justify-center items-center p-4">
+            <div class="flex items-center gap-2">
+                <svg viewBox="0 0 24 24" fill="none" class="w-8 h-8 text-white" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg>
+                <span class="text-xl font-extrabold tracking-tight text-white uppercase">Pulmo Balance</span>
             </div>
         </div>
-    </section>
+    </header>
 
+    <main>
+        <section id="order" class="hero-section-bg">
+            <div class="hero-overlay-img"></div>
+            
+            <div class="container mx-auto px-6 py-10 md:py-16 hero-container">
+                <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12 items-center">
+                    
+                    <div class="text-center md:text-left reveal flex flex-col items-center md:items-start">
+                        <div class="glass-panel rounded-full px-5 py-2 mb-6 inline-flex items-center gap-3 shadow-sm mx-auto md:mx-0">
+                            <div class="flex items-center gap-1">
+                                <span class="font-bold text-sm">4.9/5</span>
+                                <div class="flex items-center">
+                                    <i class="star-filled w-4 h-4" data-feather="star"></i>
+                                    <i class="star-filled w-4 h-4" data-feather="star"></i>
+                                    <i class="star-filled w-4 h-4" data-feather="star"></i>
+                                    <i class="star-filled w-4 h-4" data-feather="star"></i>
+                                    <i class="star-filled w-4 h-4" data-feather="star"></i>
+                                </div>
+                            </div>
+                            <div class="w-px h-4 bg-gray-300"></div>
+                            <span class="text-xs font-bold uppercase tracking-widest brand-text">OFERTA LIMITADA: 70% OFF</span>
+                        </div>
 
-
-    <!-- 4. SCIENTIFIC AUTHORITY & FEATURES (Vertical Layout like Image 1) -->
-    <section id="clinical" class="py-24 bg-white">
-        <div class="max-w-5xl mx-auto px-4 md:px-8 grid md:grid-cols-2 gap-16 items-center">
-            <!-- Left: The 3 vertical features -->
-            <div class="space-y-12">
-                <!-- Feature 1 -->
-                <div class="flex flex-col gap-4">
-                    <div
-                        class="w-12 h-12 rounded-full bg-brand-blueSoft flex items-center justify-center text-brand-greenDark text-2xl">
-                        <i class="fa-solid fa-earth-europe"></i>
-                    </div>
-                    <div>
-                        <h3 class="font-bold text-xl text-brand-textDark mb-2">Tailored for the UK & EU</h3>
-                        <p class="text-brand-textMuted leading-relaxed">Developed with European preferences and strict
-                            quality expectations in mind.</p>
-                    </div>
-                </div>
-                <!-- Feature 2 -->
-                <div class="flex flex-col gap-4">
-                    <div
-                        class="w-12 h-12 rounded-full bg-brand-blueSoft flex items-center justify-center text-brand-greenDark text-2xl">
-                        <i class="fa-solid fa-leaf"></i>
-                    </div>
-                    <div>
-                        <h3 class="font-bold text-xl text-brand-textDark mb-2">100% Natural Ingredients</h3>
-                        <p class="text-brand-textMuted leading-relaxed">We use only pure, high-quality plant extracts.
-                            No fillers. No synthetic stimulants that lead to crashes.</p>
-                    </div>
-                </div>
-                <!-- Feature 3 -->
-                <div class="flex flex-col gap-4">
-                    <div
-                        class="w-12 h-12 rounded-full bg-brand-blueSoft flex items-center justify-center text-brand-greenDark text-2xl">
-                        <i class="fa-solid fa-box-open"></i>
-                    </div>
-                    <div>
-                        <h3 class="font-bold text-xl text-brand-textDark mb-2">Made in Europe</h3>
-                        <p class="text-brand-textMuted leading-relaxed">Safely produced under strict European safety and
-                            quality standards (EFSA guidelines).</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Right: Design block mimicking image 2 -->
-            <div class="bg-white p-8 md:p-12 border border-gray-100 shadow-premium rounded-2xl">
-                <h2
-                    class="font-display text-3xl md:text-5xl uppercase font-bold text-brand-textDark mb-6 leading-tight">
-                    ENGINEERED FOR THE MODERN MAN, TO EUROPEAN STANDARDS
-                </h2>
-                <p class="text-lg text-brand-textMuted mb-10 leading-relaxed font-medium">
-                    When energy drops and performance wanes, your body needs targeted support. This powerful blend
-                    combines L-Arginine, potent plant extracts, and essential B-vitamins to promote endurance, support
-                    normal testosterone levels, and help reduce fatigue – so you feel strong, focused, and ready for the
-                    day.
-                </p>
-                <a href="https://www.fasttrack36.com/PHPWHDRK/2TQRWGN2/?uid=51891"
-                    class="btn-conversion w-full sm:w-auto px-10 py-4 text-lg rounded-md uppercase">
-                    ORDER NOW <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- 5. HOW TO TAKE -->
-    <section id="how-to-use" class="py-24 bg-brand-blueSoft">
-        <div class="max-w-6xl mx-auto px-4 md:px-8 text-center">
-            <h2 class="font-display text-4xl md:text-5xl uppercase font-bold text-brand-textDark mb-16">
-                SIMPLE. DISCREET. EFFECTIVE.
-            </h2>
-
-            <div class="grid md:grid-cols-3 gap-12 max-w-5xl mx-auto mb-16">
-                <!-- Circle 1 -->
-                <div class="flex flex-col items-center text-center">
-                    <div class="bg-white w-32 h-32 rounded-full shadow-sm flex items-center justify-center mb-6">
-                        <span class="text-brand-greenDark text-3xl"><i class="fa-solid fa-capsules"></i></span>
-                    </div>
-                    <h3 class="font-bold text-xl mb-3 text-brand-textDark">One per day</h3>
-                    <p class="text-brand-textMuted text-sm leading-relaxed max-w-xs">
-                        Take one capsule daily with a full glass of water. Do not exceed the recommended dose.
-                    </p>
-                </div>
-
-                <!-- Circle 2 -->
-                <div class="flex flex-col items-center text-center">
-                    <div class="bg-white w-32 h-32 rounded-full shadow-sm flex items-center justify-center mb-6">
-                        <span class="text-brand-greenDark text-3xl"><i class="fa-regular fa-clock"></i></span>
-                    </div>
-                    <h3 class="font-bold text-xl mb-3 text-brand-textDark">Optimal timing</h3>
-                    <p class="text-brand-textMuted text-sm leading-relaxed max-w-xs">
-                        For the best absorption, it is recommended to take the capsule 15-30 minutes before breakfast.
-                    </p>
-                </div>
-
-                <!-- Circle 3 -->
-                <div class="flex flex-col items-center text-center">
-                    <div class="bg-white w-32 h-32 rounded-full shadow-sm flex items-center justify-center mb-6">
-                        <span class="text-brand-greenDark text-3xl"><i class="fa-solid fa-glass-water"></i></span>
-                    </div>
-                    <h3 class="font-bold text-xl mb-3 text-brand-textDark">Dissolve if needed</h3>
-                    <p class="text-brand-textMuted text-sm leading-relaxed max-w-xs">
-                        If swallowing capsules is difficult, you can dissolve the contents in water to experience the
-                        full benefits.
-                    </p>
-                </div>
-            </div>
-
-            <a href="https://www.fasttrack36.com/PHPWHDRK/2TQRWGN2/?uid=51891"
-                class="btn-conversion text-lg px-12 py-4 rounded-md shadow-lg uppercase">
-                ORDER NOW <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
-            </a>
-        </div>
-    </section>
-
-    <!-- 6. SOCIAL PROOF / REVIEWS -->
-    <section class="py-24 bg-white border-b border-gray-100">
-        <div class="max-w-7xl mx-auto px-4 md:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-12">
-                <h2 class="font-display text-4xl uppercase font-bold text-brand-textDark mb-4">Real Men. Real Results.
-                </h2>
-                <p class="text-lg text-brand-textMuted">Join thousands of men across Europe who have regained their
-                    drive and energy.</p>
-            </div>
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Review 1 -->
-                <div class="bg-brand-blueSoft p-8 rounded-xl shadow-sm border border-white">
-                    <div class="flex items-center gap-1 text-brand-yellow mb-4 text-sm">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                            class="fa-solid fa-star"></i>
-                    </div>
-                    <h4 class="font-bold text-brand-textDark mb-3">"I don't have that afternoon slump anymore."</h4>
-                    <p class="text-brand-textMuted text-sm italic mb-6">"As a project manager working 50 hours a week, I
-                        just didn't feel as energetic as I used to. I was drinking too much coffee. MachoMacho gives me
-                        a consistent, calm energy without the jitters. I feel confident again."</p>
-                    <div class="flex items-center gap-3">
-                        <div
-                            class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center font-bold text-brand-textMuted">
-                            J</div>
-                        <div>
-                            <p class="font-bold text-sm text-brand-textDark">John T. <i
-                                    class="fa-solid fa-circle-check text-green-600 ml-1"></i></p>
-                            <p class="text-xs text-gray-500">London, UK • Verified Buyer</p>
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight tracking-tight text-gray-900">
+                            Respire melhor,<br> Viva mais leve<br> com Pulmo Balance
+                        </h1>
+                        
+                        <p class="text-lg md:text-xl mb-8 text-gray-600 leading-relaxed max-w-lg">
+                            Limpe suas vias respiratórias e suporte seus pulmões naturalmente. Pulmo Balance foi formulado para ajudar você a respirar fundo e sentir-se revigorado.
+                        </p>
+                        
+                        <div class="w-full max-w-md glass-panel rounded-2xl p-6 mb-8 text-left shadow-sm">
+                            <ul class="space-y-4">
+                                <li class="flex items-start">
+                                    <div class="brand-bg rounded-full p-1 mr-3 mt-1 flex-shrink-0">
+                                        <i data-feather="check" class="text-white w-3 h-3"></i>
+                                    </div>
+                                    <span class="text-gray-800 font-semibold text-sm sm:text-base">Suporte Natural para Pulmões e Brônquios</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="brand-bg rounded-full p-1 mr-3 mt-1 flex-shrink-0">
+                                        <i data-feather="check" class="text-white w-3 h-3"></i>
+                                    </div>
+                                    <span class="text-gray-800 font-semibold text-sm sm:text-base">Fórmula 100% à Base de Plantas</span>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                </div>
-                <!-- Review 2 -->
-                <div class="bg-brand-blueSoft p-8 rounded-xl shadow-sm border border-white">
-                    <div class="flex items-center gap-1 text-brand-yellow mb-4 text-sm">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                            class="fa-solid fa-star"></i>
-                    </div>
-                    <h4 class="font-bold text-brand-textDark mb-3">"Data-driven and delivers as promised."</h4>
-                    <p class="text-brand-textMuted text-sm italic mb-6">"I take a very rational approach to supplements
-                        and review the research. The EFSA-backed ingredients convinced me. Nearing my 40th birthday, my
-                        gym performance had dropped. This brought my stamina right back."
-                    </p>
-                    <div class="flex items-center gap-3">
-                        <div
-                            class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center font-bold text-brand-textMuted">
-                            L</div>
-                        <div>
-                            <p class="font-bold text-sm text-brand-textDark">Luke V. <i
-                                    class="fa-solid fa-circle-check text-green-600 ml-1"></i></p>
-                            <p class="text-xs text-gray-500">Manchester, UK • Verified Buyer</p>
+
+                    <div class="flex flex-col gap-6 reveal">
+                        <div class="flex justify-center flex-col items-center gap-6">
+                            <div class="relative group">
+                                <div class="absolute inset-0 brand-bg opacity-10 blur-3xl rounded-full group-hover:opacity-20 transition-opacity"></div>
+                                <div class="relative flex flex-col items-center">
+                                    <img src="images/pulmo-balance.png" alt="Pulmo Balance" class="w-full max-w-[320px] h-auto drop-shadow-2xl relative z-10 transform hover:scale-105 transition-transform duration-500" onerror="this.src='https://via.placeholder.com/320x400?text=Pulmo+Balance'">
+                                    <div class="mt-4 text-center">
+                                        <span class="font-black text-gray-900 brand-text text-xl">PULMO BALANCE</span>
+                                        <p class="text-[10px] text-gray-400 font-bold uppercase tracking-widest mt-1">Advanced Respiratory Support</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full max-w-[280px] bg-white/50 backdrop-blur-sm p-3 rounded-2xl border border-gray-100">
+                                <img src="images/imgi_29_certifications.png" alt="Certificações" class="w-full h-auto opacity-90" onerror="this.style.display='none'">
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <!-- Review 3 -->
-                <div class="bg-brand-blueSoft p-8 rounded-xl shadow-sm border border-white">
-                    <div class="flex items-center gap-1 text-brand-yellow mb-4 text-sm">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                            class="fa-solid fa-star"></i>
-                    </div>
-                    <h4 class="font-bold text-brand-textDark mb-3">"Safe, reliable and effective."</h4>
-                    <p class="text-brand-textMuted text-sm italic mb-6">"I was worried about relying on strong synthetic
-                        products for energy. Knowing it's strictly manufactured in Europe gives me peace of mind. The
-                        results over the past two months speak for themselves."</p>
-                    <div class="flex items-center gap-3">
-                        <div
-                            class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center font-bold text-brand-textMuted">
-                            M</div>
-                        <div>
-                            <p class="font-bold text-sm text-brand-textDark">Mark H. <i
-                                    class="fa-solid fa-circle-check text-green-600 ml-1"></i></p>
-                            <p class="text-xs text-gray-500">Birmingham, UK • Verified Buyer</p>
+
+                        <div class="flex flex-col gap-4 w-full max-w-sm mx-auto">
+                            <!-- Botão DTC Atualizado -->
+                            <a href="https://hop.clickbank.net/?affiliate=vend02&vendor=pulmobalan&pid=pre1" class="btn-shine flex items-center justify-center brand-bg hover:opacity-90 text-white text-xl font-bold py-5 rounded-2xl transition-all shadow-xl hover:-translate-y-1">
+                                <span class="flex items-center gap-2">
+                                    <i data-feather="shopping-cart" class="w-5 h-5"></i>
+                                    <span>COMPRAR AGORA</span>
+                                </span>
+                            </a>
+                            <!-- Botão VSL Atualizado -->
+                            <a href="https://hop.clickbank.net/?custom=1&affiliate=vend02&vendor=pulmobalan&pid=new" class="flex items-center justify-center vsl-btn text-lg font-bold py-4 rounded-2xl transition-all border-2 border-[#0D3328] hover:-translate-y-1">
+                                <span class="flex items-center gap-2">
+                                    <i data-feather="play-circle" class="w-5 h-5"></i>
+                                    <span>VER APRESENTAÇÃO</span>
+                                </span>
+                            </a>
                         </div>
+                        <p class="text-center text-xs text-gray-400 font-medium italic">Compra Segura | Garantia de 90 Dias</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- 7. ORDER / DUAL PATH OFFER -->
-    <section id="order" class="py-24 bg-white relative">
-        <div class="max-w-4xl mx-auto px-4 md:px-8 text-center">
-            <h2 class="font-display text-4xl uppercase font-bold text-brand-textDark mb-4">START YOUR REVITALIZATION
-                TODAY</h2>
-            <p class="text-lg text-brand-textMuted mb-12">Choose your package. Completely confidential processing.</p>
-
-            <div
-                class="bg-brand-blueSoft rounded-2xl p-8 md:p-12 shadow-premium border border-gray-100 flex flex-col md:flex-row items-center justify-between gap-8 text-left">
-                <div>
-                    <div
-                        class="inline-block px-3 py-1 bg-brand-navy text-white text-[10px] font-bold uppercase tracking-wider rounded-sm mb-4">
-                        Secure Checkout</div>
-                    <h3 class="font-display text-3xl font-bold uppercase text-brand-textDark mb-2">PLACE ORDER</h3>
-                    <p class="text-brand-textMuted mb-6">Invest in a healthier, stronger you. Backed by a 60-day
-                        money-back guarantee.</p>
-                    <ul class="space-y-3 mb-8">
-                        <li class="flex items-center gap-3 text-sm text-brand-textDark"><i
-                                class="fa-solid fa-check text-brand-greenDark font-bold"></i> No recurring charges
-                            (unless selected)</li>
-                        <li class="flex items-center gap-3 text-sm text-brand-textDark"><i
-                                class="fa-solid fa-check text-brand-greenDark font-bold"></i> Simple, plain packaging
-                        </li>
-                        <li class="flex items-center gap-3 text-sm text-brand-textDark"><i
-                                class="fa-solid fa-check text-brand-greenDark font-bold"></i> Tracked European delivery
-                        </li>
-                    </ul>
-                </div>
-                <div class="w-full md:w-auto flex-shrink-0">
-                    <a href="https://www.fasttrack36.com/PHPWHDRK/2TQRWGN2/?uid=51891"
-                        class="btn-conversion w-full md:w-auto px-10 py-5 text-xl rounded-md shadow-lg block text-center uppercase tracking-wider">
-                        ORDER NOW <i class="fa-solid fa-cart-shopping ml-2 text-sm"></i>
-                    </a>
-                    <div class="mt-4 flex gap-2 justify-center text-gray-400 text-2xl">
-                        <i class="fa-brands fa-cc-visa"></i>
-                        <i class="fa-brands fa-cc-mastercard"></i>
-                        <i class="fa-brands fa-cc-paypal"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SEO ARTICLE (GERMANY) -->
-    <section class="py-16 bg-white border-t border-gray-100">
-        <div class="max-w-4xl mx-auto px-4 md:px-8 prose prose-lg prose-blue">
-            <h1 class="font-display text-3xl font-bold uppercase mb-6">Machomacho Capsule Review: Benefits & Customer
-                Insights</h1>
-            <p>If you are looking for a natural supplement designed to boost male vitality, this detailed guide is for
-                you. We explore what people have written so far about machomacho capsules, earning a solid 4-star
-                rating. Many individuals seek a powerful way to improve their overall performance. This article examines
-                key ingredients, company details, and why it's highly important to read customer service reviews before
-                making any online purchase.</p>
-            <p>You'll quickly discover essential contact info, including reviews that are labeled verified. This helps
-                to combat fake reviews and protect platform integrity. We also show what people also looked at when
-                comparing the best options for any man seeking to increase his daily stamina.</p>
-
-            <h2 class="font-display text-2xl font-bold uppercase mt-12 mb-4">What Is Machomacho and How Does the Capsule
-                Work?</h2>
-            <p>This is a supplement designed to boost men’s daily metrics. It is specifically designed to boost men’s
-                energy and focus. Unlike quick fixes, this capsule relies on natural herbal extracts and a mineral base
-                to actively support healthy testosterone. Regular use may help you feel more active, reduce mental
-                fatigue, and promote healthy muscle growth. It naturally enhances strength and physical endurance,
-                giving a man the confidence he needs for the day.</p>
-
-            <h2 class="font-display text-2xl font-bold uppercase mt-12 mb-4">Key Ingredients and Their Benefits</h2>
-            <div class="overflow-x-auto my-6">
-                <table class="w-full text-left border-collapse">
-                    <thead>
-                        <tr class="bg-gray-100 text-brand-navy">
-                            <th class="p-3 border font-bold">Ingredient</th>
-                            <th class="p-3 border font-bold">Primary Benefit</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="p-3 border font-medium">L-Arginine</td>
-                            <td class="p-3 border">Promotes healthy blood flow for physical endurance.</td>
-                        </tr>
-                        <tr class="bg-gray-50">
-                            <td class="p-3 border font-medium">Maca Root</td>
-                            <td class="p-3 border">Traditional extract used to fuel stamina.</td>
-                        </tr>
-                        <tr>
-                            <td class="p-3 border font-medium">Ginseng</td>
-                            <td class="p-3 border">Naturally boosts energy levels.</td>
-                        </tr>
-                        <tr class="bg-gray-50">
-                            <td class="p-3 border font-medium">Zinc & B-Vitamins</td>
-                            <td class="p-3 border">Essential vitamin complexes for metabolism.</td>
-                        </tr>
-                    </tbody>
-                </table>
+    <footer class="bg-[#0a261e] text-gray-400 py-16 border-t border-white/5">
+        <div class="container mx-auto px-6 text-center text-sm">
+            <p class="text-gray-300 mb-8">&copy; 2026 Pulmo Balance Research. Todos os direitos reservados.</p>
+            
+            <div class="flex justify-center flex-wrap gap-6 md:gap-10 mb-12 text-[10px] font-bold uppercase tracking-widest">
+                <button onclick="openModal('terms')" class="hover:text-emerald-500 transition-colors">Termos e Condições</button>
+                <button onclick="openModal('privacy')" class="hover:text-emerald-500 transition-colors">Privacidade</button>
+                <button onclick="openModal('shipping')" class="hover:text-emerald-500 transition-colors">Envio</button>
+                <button onclick="openModal('returns')" class="hover:text-emerald-500 transition-colors">Reembolso</button>
+                <button onclick="openModal('contact')" class="hover:text-emerald-500 transition-colors">Contato</button>
             </div>
 
-            <h2 class="font-display text-2xl font-bold uppercase mt-12 mb-4">Review Guidelines and Transparency</h2>
-            <p>Reputable stores may label reviews to ensure transparency. Verified feedback helps you safely
-                double-check shipping, refund policies, and customer support accessibility.</p>
-
-            <h2 class="font-display text-2xl font-bold uppercase mt-12 mb-4">Final Thoughts</h2>
-            <p>If you aim to support your male vitality, improve your routine, and maintain energy and confidence,
-                machomacho capsules offer a reliable daily solution.</p>
-
-            <h2 id="faq" class="font-display text-2xl font-bold uppercase mt-12 mb-4">Frequently Asked Questions (FAQ) –
-                Machomacho UK</h2>
-
-            <div class="space-y-4 my-8 relative z-20">
-                <div class="faq-item border border-gray-100 rounded-lg bg-gray-50 overflow-hidden cursor-pointer active"
-                    onclick="toggleFaq(this)">
-                    <div class="p-5 flex justify-between items-center bg-white hover:bg-gray-50 transition">
-                        <h4 class="font-bold text-brand-textDark pr-4">Where can you find official contact info for
-                            Machomacho UK?</h4>
-                        <span class="icon-wrapper text-brand-greenDark flex-shrink-0"><i
-                                class="fa-solid fa-plus text-xl"></i></span>
-                    </div>
-                    <div class="faq-answer px-5 bg-gray-50 text-brand-textMuted text-sm leading-relaxed border-t border-gray-100"
-                        style="max-height: 500px">
-                        <div class="py-4">
-                            Before purchasing machomacho capsules, verify that the contact info is easy to find on the
-                            official website. This ensures smooth communication regarding shipping, dosage, or policies.
-                            Buying directly guarantees you're dealing with authentic customer support located within
-                            Europe.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="faq-item border border-gray-100 rounded-lg bg-gray-50 overflow-hidden cursor-pointer"
-                    onclick="toggleFaq(this)">
-                    <div class="p-5 flex justify-between items-center bg-white hover:bg-gray-50 transition">
-                        <h4 class="font-bold text-brand-textDark pr-4">Are Machomacho Capsules effective for male
-                            vitality?</h4>
-                        <span class="icon-wrapper text-brand-greenDark flex-shrink-0"><i
-                                class="fa-solid fa-plus text-xl"></i></span>
-                    </div>
-                    <div
-                        class="faq-answer px-5 bg-gray-50 text-brand-textMuted text-sm leading-relaxed border-t border-gray-100">
-                        <div class="py-4">
-                            Machomacho capsules are positioned as a supplement designed to boost men's energy and
-                            confidence in everyday life. Although outcomes vary, regular use may help users feel more
-                            active and capable throughout the day. The formula relies on a blend of natural extracts
-                            like Maca and L-Arginine.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="faq-item border border-gray-100 rounded-lg bg-gray-50 overflow-hidden cursor-pointer"
-                    onclick="toggleFaq(this)">
-                    <div class="p-5 flex justify-between items-center bg-white hover:bg-gray-50 transition">
-                        <h4 class="font-bold text-brand-textDark pr-4">Why read customer service reviews before buying?
-                        </h4>
-                        <span class="icon-wrapper text-brand-greenDark flex-shrink-0"><i
-                                class="fa-solid fa-plus text-xl"></i></span>
-                    </div>
-                    <div
-                        class="faq-answer px-5 bg-gray-50 text-brand-textMuted text-sm leading-relaxed border-t border-gray-100">
-                        <div class="py-4">
-                            It is highly recommended to read customer service reviews before committing to any
-                            supplement. Reviews highlight shipping times, refund policies, and communication quality,
-                            providing verified feedback and improving purchase confidence. It helps you verify the
-                            product's quality through real-world results.
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="mt-10 mb-6 text-center">
-                <a href="https://www.fasttrack36.com/PHPWHDRK/2TQRWGN2/?uid=51891"
-                    class="btn-conversion text-lg px-8 py-4 rounded-md shadow-md uppercase no-underline inline-block">
-                    ORDER RISK-FREE TODAY
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- 9. FOOTER & MODALS -->
-    <footer class="bg-brand-textDark text-gray-300 py-12 md:py-16">
-        <div class="max-w-7xl mx-auto px-4 md:px-8">
-            <div class="flex flex-col md:flex-row justify-between items-center md:items-start gap-8 mb-12">
-                <div class="text-center md:text-left">
-                    <p class="text-sm text-gray-400 max-w-xs">Developed for men. Designed for performance. Manufactured
-                        in Europe.</p>
-                </div>
-                <div class="flex flex-col items-center md:items-end gap-3">
-                    <div class="flex gap-6">
-                        <button onclick="openModal('privacyModal')" class="text-sm hover:text-white transition">Privacy
-                            Policy</button>
-                        <button onclick="openModal('termsModal')" class="text-sm hover:text-white transition">Terms of
-                            Service</button>
-                        <button onclick="openModal('returnsModal')" class="text-sm hover:text-white transition">Return
-                            Policy</button>
-                    </div>
-                    <a href="mailto:support@machomacho.eu"
-                        class="text-sm text-gray-400 hover:text-white transition mt-2"><i
-                            class="fa-regular fa-envelope"></i> support@machomacho.eu</a>
-                </div>
-            </div>
-
-            <!-- SEC Disclaimers -->
-            <div
-                class="border-t border-gray-800 pt-8 text-[11px] leading-relaxed text-gray-500 text-center md:text-left max-w-5xl mx-auto md:mx-0">
-                <p class="mb-4"><strong>DISCLAIMER:</strong> These statements have not been evaluated by European
-                    medicine agencies (such as the MHRA or EMA). This product is not intended to diagnose, treat, cure,
-                    or prevent any disease. Results may vary individually.</p>
-                <p class="mb-4">The information on this website is for informational purposes only and is not intended
-                    as a substitute for advice from your physician or other health care professionals. You should not
-                    use the information contained herein for diagnosing or treating a health problem.</p>
-                <p>&copy; 2024 MachoMacho UK. All rights reserved.</p>
+            <div class="border-t border-white/5 pt-8 text-[11px] text-gray-500 max-w-4xl mx-auto leading-relaxed opacity-60 text-center space-y-4">
+                <p>As informações neste site não foram avaliadas pela Food and Drug Administration. Estes produtos não se destinam a diagnosticar, tratar, curar ou prevenir qualquer doença.</p>
+                <p>Este site não faz parte do Google™ ou Meta Inc. Os resultados podem variar de acordo com a experiência individual.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Modals -->
-    <div id="privacyModal" class="modal p-4">
-        <div class="bg-white rounded-xl w-full max-w-2xl max-h-[80vh] flex flex-col shadow-2xl">
-            <div class="p-6 border-b border-gray-100 flex justify-between items-center">
-                <h3 class="font-bold text-xl text-brand-textDark list-none">Privacy Policy</h3>
-                <button onclick="closeModals()" class="text-gray-400 hover:text-brand-textDark text-xl"><i
-                        class="fa-solid fa-xmark"></i></button>
-            </div>
-            <div class="p-6 overflow-y-auto text-sm text-brand-textMuted leading-relaxed space-y-4">
-                <p><strong>1. Data Collection:</strong> We collect personal data exclusively for processing your orders,
-                    providing customer support, and in strict compliance with GDPR guidelines in the EU/UK.</p>
-                <p><strong>2. Usage:</strong> Your data is never sold. It is used exclusively to fulfill your purchase
-                    and communicate important product information.</p>
-                <p><strong>3. Security:</strong> All transactions are encrypted via SSL protocol and processed by
-                    trusted third-party payment gateways.</p>
-                <p><strong>4. Your Rights:</strong> You have the right to request deletion or modification of your data
-                    at any time. Contact our support to do so.</p>
-            </div>
-        </div>
-    </div>
-
-    <div id="termsModal" class="modal p-4">
-        <div class="bg-white rounded-xl w-full max-w-2xl max-h-[80vh] flex flex-col shadow-2xl">
-            <div class="p-6 border-b border-gray-100 flex justify-between items-center">
-                <h3 class="font-bold text-xl text-brand-textDark">Terms of Service</h3>
-                <button onclick="closeModals()" class="text-gray-400 hover:text-brand-textDark text-xl"><i
-                        class="fa-solid fa-xmark"></i></button>
-            </div>
-            <div class="p-6 overflow-y-auto text-sm text-brand-textMuted leading-relaxed space-y-4">
-                <p><strong>1. General:</strong> By using this website and purchasing the MachoMacho product, you agree
-                    to these terms. You must be at least 18 years old to make a purchase.</p>
-                <p><strong>2. Product Purchases:</strong> All orders are subject to item availability and order price
-                    confirmation.</p>
-                <p><strong>3. Health Disclaimer:</strong> You acknowledge that MachoMacho is a dietary supplement.
-                    Always consult a doctor before starting any new supplement.</p>
-                <p><strong>4. Intellectual Property:</strong> All content, logos, and formulas are property of the
-                    MachoMacho Corporation.</p>
-            </div>
-        </div>
-    </div>
-
-    <div id="returnsModal" class="modal p-4">
-        <div class="bg-white rounded-xl w-full max-w-2xl max-h-[80vh] flex flex-col shadow-2xl">
-            <div class="p-6 border-b border-gray-100 flex justify-between items-center">
-                <h3 class="font-bold text-xl text-brand-textDark">Returns & 60-Day Guarantee</h3>
-                <button onclick="closeModals()" class="text-gray-400 hover:text-brand-textDark text-xl"><i
-                        class="fa-solid fa-xmark"></i></button>
-            </div>
-            <div class="p-6 overflow-y-auto text-sm text-brand-textMuted leading-relaxed space-y-4">
-                <p><strong>60-Day Money-Back Guarantee:</strong> We stand fully behind our formula. If you have used
-                    MachoMacho as directed for 60 days and do not notice a perceptible difference in your performance,
-                    you can request a refund.</p>
-                <p><strong>Return Process:</strong> Contact our support to initiate a return. Items must be returned to
-                    our European logistics centre. Return shipping costs are borne by the customer.</p>
-                <p><strong>Damaged Items:</strong> If your item arrives damaged, please report it within 48 hours to
-                    receive an immediate replacement at no additional cost.</p>
+    <!-- MODAL -->
+    <div id="policy-modal" class="fixed inset-0 z-[100] hidden">
+        <div class="fixed inset-0 bg-[#0a261e]/95 backdrop-blur-md" onclick="closeModal()"></div>
+        <div class="fixed inset-0 z-10 overflow-y-auto flex items-center justify-center p-4">
+            <div class="relative bg-white rounded-3xl shadow-2xl w-full max-w-4xl max-h-[85vh] flex flex-col">
+                <div class="p-6 border-b border-gray-100 flex justify-between items-center sticky top-0 bg-white rounded-t-3xl z-30">
+                    <h3 class="text-sm font-black tracking-widest text-[#0D3328] uppercase" id="modal-title">Informação Legal</h3>
+                    <button onclick="closeModal()" class="p-2 hover:bg-gray-100 rounded-full transition-colors"><i data-feather="x" class="h-5 w-5"></i></button>
+                </div>
+                <div class="p-8 md:p-12 overflow-y-auto custom-scrollbar">
+                    <div class="prose prose-sm max-w-none text-gray-700" id="modal-content-area"></div>
+                </div>
             </div>
         </div>
     </div>
 
     <script>
-        function toggleFaq(el) {
-            const container = el.parentElement;
-            document.querySelectorAll('.faq-item').forEach(item => {
-                if (item !== el) item.classList.remove('active');
-            });
-            el.classList.toggle('active');
-        }
+        feather.replace();
 
-        function openModal(id) {
-            document.getElementById(id).classList.add('active');
-            document.body.style.overflow = 'hidden';
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                if (elementTop < windowHeight - 30) { reveals[i].classList.add("active"); }
+            }
         }
+        window.addEventListener("scroll", reveal);
+        window.addEventListener("load", reveal);
+        reveal();
 
-        function closeModals() {
-            document.querySelectorAll('.modal').forEach(m => m.classList.remove('active'));
+        const modalData = {
+            terms: {
+                title: "Termos, Condições e Isenção de Responsabilidade",
+                content: `
+                    <h4>ISENÇÃO DE RESPONSABILIDADE</h4>
+                    <p>O site Pulmo Balance (o "Site") é um serviço de informações on-line, sujeito ao seu cumprimento dos termos e condições estabelecidos abaixo. POR FAVOR, LEIA ESTE DOCUMENTO ATENTAMENTE ANTES DE ACESSAR OU USAR O SITE.</p>
+                    
+                    <h4>1. DIREITOS AUTORAIS E LICENÇAS</h4>
+                    <p>Todo o conteúdo do Site é protegido por leis internacionais de direitos autorais e marcas registradas. VOCÊ NÃO PODE MODIFICAR, COPIAR, REPRODUZIR, REPUBLICAR OU DISTRIBUIR O MATERIAL DO SITE.</p>
+                    
+                    <h4>ISENÇÕES DE SAÚDE</h4>
+                    <p>(i) Não substitui aconselhamento médico profissional. O conteúdo do site não substitui o atendimento médico profissional direto e pessoal.</p>
+                `
+            },
+            privacy: {
+                title: "Política de Privacidade",
+                content: `
+                    <h4>VISITANTES DO SITE</h4>
+                    <p>Coletamos informações que não identificam pessoalmente, como tipo de navegador e preferência de idioma, para entender melhor como os visitantes usam nosso site.</p>
+                    
+                    <h4>SEGURANÇA</h4>
+                    <p>A segurança de suas informações pessoais é importante para nós, mas lembre-se de que nenhum método de transmissão pela Internet é 100% seguro.</p>
+                `
+            },
+            shipping: {
+                title: "Política de Envio",
+                content: `
+                    <h4>TEMPO DE PROCESSAMENTO</h4>
+                    <p>Aguarde de 1 a 2 dias úteis de processamento para que seu pedido seja enviado. Durante feriados, os pedidos podem sofrer atrasos.</p>
+                    
+                    <h4>ENTREGA DOMÉSTICA</h4>
+                    <p>O tempo de trânsito depende do método de envio selecionado. Todos os tempos de entrega são estimativas.</p>
+                `
+            },
+            returns: {
+                title: "Política de Devolução",
+                content: `
+                    <h4>GARANTIA DE REEMBOLSO DE 90 DIAS</h4>
+                    <p>Se você não estiver satisfeito com seu produto por qualquer motivo, terá 90 dias a partir da data de compra para devolver o produto e solicitar um reembolso.</p>
+                    
+                    <h4>ENDEREÇO DE DEVOLUÇÃO</h4>
+                    <p>Pulmo Balance<br>285 Northeast ave, Tallmadge Ohio, 44278, EUA</p>
+                `
+            },
+            contact: {
+                title: "Como entrar em contato",
+                content: `
+                    <h4>SUPORTE AO PRODUTO E PEDIDO</h4>
+                    <p><strong>E-mail:</strong> support@pulmobalance.com</p>
+                    <p><strong>Telefone:</strong> +1-888-834-4386</p>
+                    <p><strong>Disponibilidade:</strong> Seg - Dom 10:00 - 01:00 EST</p>
+                `
+            }
+        };
+
+        function openModal(type) {
+            const data = modalData[type];
+            if (data) {
+                document.getElementById('modal-title').innerText = data.title;
+                document.getElementById('modal-content-area').innerHTML = data.content;
+                document.getElementById('policy-modal').classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+            }
+        }
+        
+        function closeModal() {
+            document.getElementById('policy-modal').classList.add('hidden');
             document.body.style.overflow = 'auto';
         }
 
-        window.onclick = function (event) {
-            if (event.target.classList.contains('modal')) {
-                closeModals();
-            }
-        }
-
-        document.addEventListener('keydown', function (event) {
-            if (event.key === 'Escape') {
-                closeModals();
-            }
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeModal();
         });
     </script>
 </body>
-
 </html>
