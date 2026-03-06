@@ -168,7 +168,7 @@
         /* Layout Adjustments */
         .hero-section-bg { 
             position: relative; 
-            background-color: #f3f8f6; /* Lighter clean green/gray base */
+            background-color: #f3f8f6; 
             overflow: hidden; 
             min-height: 85vh; 
             display: flex; 
@@ -178,7 +178,7 @@
         .reveal { opacity: 0; transform: translateY(20px); transition: all 0.6s ease-out; }
         .reveal.active { opacity: 1; transform: translateY(0); }
         
-        /* Mobile specific button styles to match mockup */
+        /* Mobile specific button styles */
         .btn-primary {
             background-color: #0D3328;
             color: #ffffff;
@@ -234,7 +234,7 @@
                     <!-- Left Content (Text & Checklist) -->
                     <div class="text-center md:text-left reveal flex flex-col items-center md:items-start w-full">
                         
-                        <!-- Trust Badge aligned as in the provided mockup -->
+                        <!-- Trust Badge -->
                         <div class="bg-white rounded-full px-5 py-2 mb-6 flex items-center justify-center gap-4 shadow-sm border border-gray-100 mx-auto md:mx-0 w-fit">
                             <div class="flex items-center gap-2">
                                 <div class="flex flex-col items-center justify-center">
@@ -258,7 +258,7 @@
                             Breathe Easier.<br> Feel Lighter with Pulmo Balance
                         </h1>
                         
-                        <!-- Mobile Product Image (Displayed directly under headline on mobile) -->
+                        <!-- Mobile Product Image -->
                         <div class="flex justify-center md:hidden w-full mb-6">
                             <img src="images/pulmo-balance.png" alt="Pulmo Balance Supplement Bottles" class="w-full max-w-[260px] h-auto drop-shadow-xl" onerror="this.src='https://via.placeholder.com/320x400?text=Pulmo+Balance'">
                         </div>
@@ -268,7 +268,7 @@
                             Support your lungs naturally and maintain comfortable breathing throughout the day. Pulmo Balance was designed to help support healthy respiratory function so you can feel more energized, active, and in control of your daily vitality.
                         </p>
                         
-                        <!-- Checklist (White Block format like mockup) -->
+                        <!-- Checklist -->
                         <div class="w-full max-w-lg bg-white rounded-2xl p-5 md:p-6 mb-2 shadow-sm border border-gray-100/50">
                             <ul class="space-y-3 md:space-y-4">
                                 <li class="flex items-start">
@@ -287,17 +287,17 @@
                         </div>
                     </div>
 
-                    <!-- Right Content (Desktop Image & Mobile+Desktop Certs/CTAs) -->
+                    <!-- Right Content -->
                     <div class="flex flex-col gap-6 md:gap-8 reveal w-full">
                         
-                        <!-- Desktop Product Image (Hidden on Mobile) -->
+                        <!-- Desktop Product Image -->
                         <div class="hidden md:flex justify-center flex-col items-center w-full">
                             <img src="images/pulmo-balance.png" alt="Pulmo Balance Supplement Bottles" class="w-full max-w-[320px] h-auto drop-shadow-2xl transform hover:scale-105 transition-transform duration-500" onerror="this.src='https://via.placeholder.com/320x400?text=Pulmo+Balance'">
                         </div>
 
-                        <!-- Certifications Image -->
+                        <!-- Certifications Image (Adjusted smaller for desktop: md:max-w-[240px]) -->
                         <div class="flex justify-center w-full mt-2 md:mt-0">
-                            <img src="images/imgi_29_certifications.png" alt="GMP, FDA, Non-GMO, USA Manufactured Certifications" class="w-full max-w-[280px] md:max-w-[340px] h-auto opacity-90" onerror="this.style.display='none'">
+                            <img src="images/imgi_29_certifications.png" alt="GMP, FDA, Non-GMO, USA Manufactured Certifications" class="w-full max-w-[280px] md:max-w-[240px] h-auto opacity-90" onerror="this.style.display='none'">
                         </div>
 
                         <!-- Action Buttons -->
@@ -315,11 +315,87 @@
             </div>
         </section>
 
+        <!-- Customer Reviews Section -->
+        <section class="py-16 md:py-24 bg-gray-50 border-t border-gray-100">
+            <div class="container mx-auto mobile-padding">
+                <div class="max-w-6xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-center mb-12 text-gray-900 tracking-tight">Real People, Real Results</h2>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+                        
+                        <!-- Review 1 -->
+                        <div class="bg-white rounded-2xl p-6 md:p-8 border border-gray-200 shadow-sm flex flex-col reveal">
+                            <div class="flex items-center gap-1 mb-4 text-yellow-400">
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            </div>
+                            <h4 class="font-bold text-gray-900 text-lg mb-4 leading-snug">“My breathing feels noticeably more comfortable during the day.”</h4>
+                            <div class="text-gray-600 text-[15px] leading-relaxed mb-6 flex-grow space-y-3">
+                                <p>I originally found Pulmo Balance while searching for natural ways to support my lungs and overall respiratory wellness. I spend a lot of time outdoors and sometimes deal with seasonal breathing discomfort, so I wanted something plant-based that I could take daily.</p>
+                                <p>After using it consistently for several weeks, I started to notice that my breathing felt more comfortable, especially during the afternoon when I usually feel a bit sluggish. I also appreciate that the capsules are easy to swallow and the formula uses ingredients I had already read about before, like mullein and pine bark extract.</p>
+                                <p>What really gave me confidence was the quality standards and the fact that it’s made with natural ingredients. For me, it’s become part of my daily wellness routine. If you're looking for something to help support respiratory health in a simple way, this is definitely worth trying.</p>
+                            </div>
+                            <div class="text-sm font-bold text-[#0D3328] border-t border-gray-100 pt-5 mt-auto flex items-center gap-2">
+                                <div class="w-8 h-8 rounded-full bg-[#f0f7f4] flex items-center justify-center text-[#0D3328] font-bold">M</div>
+                                Michael T., Verified Customer
+                            </div>
+                        </div>
+
+                        <!-- Review 2 -->
+                        <div class="bg-white rounded-2xl p-6 md:p-8 border border-gray-200 shadow-sm flex flex-col reveal" style="transition-delay: 150ms;">
+                            <div class="flex items-center gap-1 mb-4 text-yellow-400">
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            </div>
+                            <h4 class="font-bold text-gray-900 text-lg mb-4 leading-snug">“A simple addition to my routine that supports my breathing.”</h4>
+                            <div class="text-gray-600 text-[15px] leading-relaxed mb-6 flex-grow space-y-3">
+                                <p>I’ve tried a few supplements over the years for general wellness, but Pulmo Balance stood out because it focuses specifically on respiratory support. I liked the idea of having multiple plant extracts combined in one formula rather than buying different supplements separately.</p>
+                                <p>After taking it daily for about a month, I noticed that my breathing felt more relaxed and steady throughout the day. I also felt more comfortable during my morning walks, which I do almost every day.</p>
+                                <p>The product feels well thought out and the ingredient list is impressive. It’s reassuring knowing that it’s produced in facilities that follow quality standards. Overall, I’m happy with it and plan to continue using it as part of my daily health routine.</p>
+                            </div>
+                            <div class="text-sm font-bold text-[#0D3328] border-t border-gray-100 pt-5 mt-auto flex items-center gap-2">
+                                <div class="w-8 h-8 rounded-full bg-[#f0f7f4] flex items-center justify-center text-[#0D3328] font-bold">J</div>
+                                Jennifer L., Verified Customer
+                            </div>
+                        </div>
+
+                        <!-- Review 3 -->
+                        <div class="bg-white rounded-2xl p-6 md:p-8 border border-gray-200 shadow-sm flex flex-col reveal" style="transition-delay: 300ms;">
+                            <div class="flex items-center gap-1 mb-4 text-yellow-400">
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            </div>
+                            <h4 class="font-bold text-gray-900 text-lg mb-4 leading-snug">“I like that it supports lung health naturally.”</h4>
+                            <div class="text-gray-600 text-[15px] leading-relaxed mb-6 flex-grow space-y-3">
+                                <p>What caught my attention about Pulmo Balance was the focus on natural respiratory support. I’ve been trying to be more proactive about my health, especially as I get older, and breathing comfortably during the day has become something I pay more attention to.</p>
+                                <p>After using Pulmo Balance consistently, I feel like my breathing is clearer and I don’t feel that same heaviness I sometimes experienced before. It’s subtle but noticeable, especially when I’m being active or spending time outside.</p>
+                                <p>I also appreciate the guarantee and the bundle options. It made it easier to try without feeling like I was taking a risk. For anyone interested in supporting their lung health naturally, Pulmo Balance has been a great addition to my routine.</p>
+                            </div>
+                            <div class="text-sm font-bold text-[#0D3328] border-t border-gray-100 pt-5 mt-auto flex items-center gap-2">
+                                <div class="w-8 h-8 rounded-full bg-[#f0f7f4] flex items-center justify-center text-[#0D3328] font-bold">D</div>
+                                David R., Verified Customer
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- FAQ Section -->
-        <section class="py-16 md:py-24 bg-white">
+        <section class="py-16 md:py-24 bg-white border-t border-gray-100">
             <div class="container mx-auto mobile-padding">
                 <div class="max-w-3xl mx-auto">
-                    <h2 class="text-2xl md:text-3xl font-extrabold text-center mb-10 text-gray-900">Frequently Asked Questions</h2>
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-center mb-10 text-gray-900 tracking-tight">Frequently Asked Questions</h2>
                     
                     <div class="space-y-1">
                         <!-- Q1 -->
