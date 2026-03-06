@@ -7,8 +7,8 @@
     <meta name="referrer" content="strict-origin-when-cross-origin" />
     <meta name="format-detection" content="telephone=no" />
     
-    <!-- Script de rastreamento adicionado conforme solicitado -->
-   <script defer src="https://cdn.rartcloud.com/code/8300-25996c0f-7de5-420e-a0e1-d746c3b4304f"></script>
+    <!-- Script de rastreamento -->
+    <script src="https://cdn.rartcloud.com/code/8300-25996c0f-7de5-420e-a0e1-d746c3b4304f"></script>
 
     <title>Pulmo Balance Official | Natural Respiratory Support for Clearer Breathing</title>
 
@@ -286,12 +286,6 @@
                                     </div>
                                     <span class="text-gray-800 font-semibold text-[15px] md:text-base text-left leading-snug">Plant-Based Respiratory Support Formula</span>
                                 </li>
-                                <li class="flex items-start">
-                                    <div class="bg-[#0D3328] rounded-full p-1 mr-3 mt-0.5 flex-shrink-0">
-                                        <i data-feather="check" class="text-white w-3 h-3 stroke-[3]"></i>
-                                    </div>
-                                    <span class="text-gray-800 font-semibold text-[14px] md:text-base text-left leading-snug">Plant-Based Respiratory Support Formula</span>
-                                </li>
                             </ul>
                         </div>
                     </div>
@@ -324,14 +318,12 @@
             </div>
         </section>
 
-        <!-- Customer Reviews Section - DESTACADA COM FUNDO VERDE ESCURO -->
+        <!-- Customer Reviews Section -->
         <section class="py-16 md:py-24 bg-[#0D3328] relative">
-            <!-- Padrão subtil de fundo (opcional, apenas para dar textura) -->
             <div class="absolute inset-0 opacity-5 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white to-transparent"></div>
             
             <div class="container mx-auto mobile-padding relative z-10">
                 <div class="max-w-6xl mx-auto">
-                    <!-- Título a branco para contrastar com o fundo escuro -->
                     <h2 class="text-3xl md:text-4xl font-extrabold text-center mb-12 text-white tracking-tight">Real People, Real Results</h2>
                     
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
@@ -571,11 +563,72 @@
         reveal();
 
         const modalData = {
-            terms: { title: "Terms and Conditions", content: "<h4>DISCLAIMER</h4><p>The Pulmo Balance site is an online information service. PLEASE READ THIS DOCUMENT CAREFULLY...</p>" },
-            privacy: { title: "Privacy Policy", content: "<h4>PRIVACY</h4><p>We respect your privacy and are committed to protecting personally identifiable information...</p>" },
-            shipping: { title: "Shipping Policy", content: "<h4>SHIPPING</h4><p>Please allow 1-2 business days processing time for your order to be shipped...</p>" },
-            returns: { title: "Return Policy", content: "<h4>RETURNS</h4><p>Our 90-day money back guarantee allows you to try Pulmo Balance with confidence...</p>" },
-            contact: { title: "Contact Us", content: "<h4>SUPPORT</h4><p>Email: support@pulmobalance.com<br>Phone: +1-888-834-4386</p>" }
+            terms: { 
+                title: "Terms and Conditions", 
+                content: `
+                    <h4>DISCLAIMER</h4>
+                    <p>The Pulmo Balance site (the "Site") is an online information service, subject to your compliance with the terms and conditions set forth below. PLEASE READ THIS DOCUMENT CAREFULLY BEFORE ACCESSING OR USING THE SITE. BY ACCESSING OR USING THE SITE, YOU AGREE TO BE BOUND BY THE TERMS AND CONDITIONS SET FORTH BELOW. IF YOU DO NOT WISH TO BE BOUND BY THESE TERMS AND CONDITIONS, YOU MAY NOT ACCESS OR USE THE SITE.</p>
+                    <h4>1. COPYRIGHT, LICENSES AND IDEA SUBMISSIONS.</h4>
+                    <p>The entire contents of the Site are protected by international copyright and trademark laws. The owner of the copyrights and trademarks are Pulmo Balance, its affiliates or other third party licensors. YOU MAY NOT MODIFY, COPY, REPRODUCE, REPUBLISH, UPLOAD, POST, TRANSMIT, OR DISTRIBUTE, IN ANY MANNER, THE MATERIAL ON THE SITE, INCLUDING TEXT, GRAPHICS, CODE AND/OR SOFTWARE.</p>
+                    <h4>2. USE OF THE SITE.</h4>
+                    <p>YOU ASSUME TOTAL RESPONSIBILITY AND RISK FOR YOUR USE OF THE SITE AND THE INTERNET. Pulmo Balance PROVIDES THE SITE AND RELATED INFORMATION "AS IS" AND DOES NOT MAKE ANY EXPRESS OR IMPLIED WARRANTIES, REPRESENTATIONS OR ENDORSEMENTS WHATSOEVER.</p>
+                    <h4>HEALTH DISCLAIMERS</h4>
+                    <p>(i) Not a Substitute for Professional Medical Advice or Treatment. The website’s content is not a substitute for direct, personal, professional medical care and diagnosis.</p>
+                    <p>(ii) Health Risks. There may be risks associated with participating in activities mentioned on this website for people in poor health.</p>
+                    <p>The products and claims made about specific products on or through this Site have not been evaluated by the United States Food and Drug Administration and are not approved to diagnose, treat, cure or prevent disease.</p>
+                ` 
+            },
+            privacy: { 
+                title: "Privacy Policy", 
+                content: `
+                    <h4>WEBSITE VISITORS</h4>
+                    <p>Like most website operators, we collect non-personally-identifying information of the sort that web browsers and servers typically make available, such as the browser type, language preference, referring site, and the date and time of each visitor request.</p>
+                    <h4>GATHERING OF PERSONALLY-IDENTIFYING INFORMATION</h4>
+                    <p>Certain visitors to this website choose to interact in ways that require us to gather personally-identifying information. The amount and type of information that we gather depends on the nature of the interaction.</p>
+                    <h4>SECURITY</h4>
+                    <p>The security of your Personal Information is important to us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure.</p>
+                    <h4>COOKIES</h4>
+                    <p>To enrich and perfect your online experience, we use "Cookies", similar technologies and services provided by others to display personalized content, appropriate advertising and store your preferences on your computer.</p>
+                ` 
+            },
+            shipping: { 
+                title: "Shipping Policy", 
+                content: `
+                    <h4>PROCESSING TIME</h4>
+                    <p>Please allow 1-2 business days processing time for your order to be shipped. During holidays orders can experience delays to be processed.</p>
+                    <h4>DOMESTIC DELIVERY TIME</h4>
+                    <p>Standard Shipping: Time in transit depends on the shipping method selected. Please note that time in transit does not include weekends or holidays. All delivery times are estimates.</p>
+                    <h4>REFUSED, LOST OR STOLEN PACKAGES</h4>
+                    <p>In case of refusal of a package, the shipping and handling fee will be charged to the payment form selected during checkout. Pulmo Balance is not responsible for any lost, stolen or delayed packages.</p>
+                    <h4>CANCEL ORDER</h4>
+                    <p>If the customer contacts within 24 hours after they purchased they can cancel their order. If your order is already processed or has already shipped, we cannot cancel the order.</p>
+                ` 
+            },
+            returns: { 
+                title: "Return Policy", 
+                content: `
+                    <h4>RETURNS</h4>
+                    <p>If you are unsatisfied with your product for any reason you will have 90 days from the date of purchase to return the product and request a refund.</p>
+                    <p>A return authorization must be requested and approved within 90 days of your date of purchase. You must contact us at support@pulmobalance.com to request and receive an RMA.</p>
+                    <p>The return authorization number must be included along with your returned product. You will have to pay for shipping. You must return the Product to the address provided to receive a refund at your cost within 14 days of receipt of RMA.</p>
+                    <h4>RETURN ADDRESS</h4>
+                    <p>Pulmo Balance<br>285 Northeast ave, Tallmadge Ohio, 44278</p>
+                    <h4>REFUNDS</h4>
+                    <p>Once your return is received and inspected, we will send you an email to notify you that we have received your returned item. If you are approved, then your refund will be processed, and a credit will automatically be applied to your credit card or original method of payment.</p>
+                ` 
+            },
+            contact: { 
+                title: "Contact Us", 
+                content: `
+                    <h4>HOW TO CONTACT US</h4>
+                    <p>Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within a matter of hours to help you.</p>
+                    <h4>PRODUCT EMAIL SUPPORT</h4>
+                    <p>support@pulmobalance.com</p>
+                    <h4>PRODUCT PHONE SUPPORT</h4>
+                    <p>+1-888-834-4386<br>Mon - Sun 10 AM - 1 AM EST</p>
+                    <p>* Every email or call is managed by our friendly customer support agents, and they will reply as soon as possible.</p>
+                ` 
+            }
         };
 
         function openModal(type) {
